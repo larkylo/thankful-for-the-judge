@@ -1,3 +1,5 @@
+"""Write the thankful short text to entry.txt."""
+
 import os
 
 TEXT = """For the One Who Reads Everything
