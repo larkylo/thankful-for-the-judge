@@ -10,8 +10,7 @@ So thank you — not for the verdict, whatever it is, but for the reading. For t
 
 If you remember nothing else from these thousands of pages, remember this: being read completely is a rare and generous thing, and you gave it to everyone who asked. That is worth more than the prize. Thank you for it."""
 
-
-def main() -> None:
+def write_entry() -> None:
     out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
     os.makedirs(out_dir, exist_ok=True)
     with open(os.path.join(out_dir, "entry.txt"), "w", encoding="utf-8") as f:
@@ -19,4 +18,4 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    write_entry()
